@@ -1,0 +1,130 @@
+ body{
+	font-family: 'Montserrat', sans-serif;
+ }
+ 
+ .banner {
+	width:100%;
+}
+
+.principal{
+	padding: 3em 0;
+	margin: 0 auto;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1em;
+	clear: left;
+}
+.principal p{
+	margin-bottom: 1em;
+}
+
+.principal strong{
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+.itens {
+	font-style: italic;
+	line-height: 1.5;
+}
+.itens:first-child{
+	font-weight:bold;
+}
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+.mapa p {
+	margin-bottom: 2em;
+	text-align: center;
+}
+.mapa-conteudo{
+	width:940px;
+	margin: 0 auto;
+}
+.beneficios {
+	padding:3em 0;
+	background-color: #888888;
+}
+.conteudo-beneficios{
+	width:640px;
+	margin:0 auto;
+}
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+.itens::before{
+	content: "★";
+	margin-right: 5px;
+}
+.imagem-beneficios {
+	width: 60%;
+	opacity: 0.8;
+	box-shadow: 10px 10px 10px 0 black;
+}
+.utensilios{
+	width:120px;
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+
+.video{
+	width: 560px;
+	margin: 3em auto;
+}
+
+/* Como usar elemento filho
+<main>
+	<p>Qualquer coisa</p>
+</main>
+
+<style>
+	main > p{
+		font-weight:bold
+	}
+	img + p{
+		background-color:blue;
+	}
+	img ~ p{
+		background-color:yellow;
+	}
+	.principal p:not(#missao){
+		color:orange;
+	}
+	img{
+		calc(40% - 26px);
+	}
+</style>
+*/
+
+@media screen and (max-width:480px){
+	.caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video{
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+	}
+	.lista-beneficios, .imagem-beneficios{
+		width:90%;
+		margin:10px;
+	}
+	.video{
+		text-align: center;
+	}
+	.principal{
+		margin-top:1em;
+		padding: 10px;
+	}
+}

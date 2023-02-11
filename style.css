@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0px;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin:0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+nav a:hover{
+    color:#C78C19;
+    text-decoration: underline;
+}
+.produtos{
+    width:940px;
+    margin:0 auto;
+    padding:50px 0px;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.produtos h2{
+    font-size:30px;
+    font-weight: bold;
+}
+.produto-descri{
+    font-size:18px;
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:10px;
+}
+.produtos li:hover{
+    border-color:#C78C19
+}
+.produtos li:active{
+    border-color: darkgreen;
+}
+.produtos li:hover h2{
+    font-size: 34px;
+}
+footer{
+    text-align: center;
+    background: url('bg.jpg');
+    padding: 40px 0px;
+}
+footer p{
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media  screen and (max-width: 480px){
+    .caixa{
+        width:auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .produtos{
+        width: auto;
+    }
+    .produtos li{
+        display: block;
+        width: 90%;
+        margin: 2em auto;
+    }
+}
+    
